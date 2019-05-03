@@ -1,0 +1,29 @@
+{
+  "name": "-multiple-technology",
+  "version": "1.0.0",
+  "description": "Корпоративный сайт под ключ - \"Крановая техника\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViperPredator1992/-multiple-technology.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViperPredator1992/-multiple-technology/issues"
+  },
+  "homepage": "https://github.com/ViperPredator1992/-multiple-technology#readme",
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-tinypng": "^1.0.2"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-tinypng-compress": "^1.2.1"
+  }
+}
