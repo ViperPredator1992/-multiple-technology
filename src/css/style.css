@@ -385,4 +385,9 @@ img {
 button {
   cursor: pointer;
 }
+
+.header-top__address {
+  line-height: 22px;
+  color: #000000;
+}
 /*# sourceMappingURL=style.css.map */
