@@ -344,8 +344,8 @@ template {
 @font-face {
   font-family: 'Fira Sans';
   font-display: swap;
-  src: url("fonts/FiraSans-Bold.eot");
-  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url("fonts/FiraSans-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/FiraSans-Bold.woff2") format("woff2"), url("fonts/FiraSans-Bold.woff") format("woff"), url("fonts/FiraSans-Bold.ttf") format("truetype");
+  src: url("../fonts/FiraSans-Bold.eot");
+  src: local("Fira Sans Bold"), local("FiraSans-Bold"), url("../fonts/FiraSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-Bold.woff2") format("woff2"), url("../fonts/FiraSans-Bold.woff") format("woff"), url("../fonts/FiraSans-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
@@ -353,8 +353,8 @@ template {
 @font-face {
   font-family: 'Fira Sans';
   font-display: swap;
-  src: url("fonts/FiraSans-Regular.eot");
-  src: local("Fira Sans Regular"), local("FiraSans-Regular"), url("fonts/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/FiraSans-Regular.woff2") format("woff2"), url("fonts/FiraSans-Regular.woff") format("woff"), url("fonts/FiraSans-Regular.ttf") format("truetype");
+  src: url("../fonts/FiraSans-Regular.eot");
+  src: local("Fira Sans Regular"), local("FiraSans-Regular"), url("../fonts/FiraSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/FiraSans-Regular.woff2") format("woff2"), url("../fonts/FiraSans-Regular.woff") format("woff"), url("../fonts/FiraSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -386,8 +386,53 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
+.phone {
+  font-weight: normal;
+}
+
+.header-top {
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .header-top__address {
   line-height: 22px;
+  color: #000000;
+  max-width: 270px;
+  position: relative;
+}
+
+.header-top__address::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: -30px;
+  width: 20px;
+  height: 20px;
+  background: url(../img/geo.svg) no-repeat;
+  margin-right: 10px;
+}
+
+.header-top__schedule {
+  line-height: 22px;
+  color: #000000;
+  max-width: 107px;
+}
+
+.header-top__calls {
+  font-weight: bold;
   color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
