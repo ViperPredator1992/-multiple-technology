@@ -5,4 +5,17 @@ $(document).ready(function () {
       $(this).addClass('current');
    });
 
+    if (screen.width < 992) {
+        $(".menu").click(function () {
+            if ($(this).find("ul").css("display") == "none") {
+                $(this).find("ul").slideDown();
+                $(".burger").addClass("burger-open");
+            }
+            else {
+                $(".burger").removeClass("burger-open");
+                $(this).find("ul").slideUp();
+            }
+        });
+    }
+
 });
