@@ -561,6 +561,34 @@ a {
   background-color: #7373D9;
 }
 
+.section-hero {
+  padding: 100px 0 86px;
+}
+
+.hero {
+  background: url(../img/index/hero.jpg) center/cover no-repeat;
+  min-height: 812px;
+}
+
+.hero-text {
+  max-width: 850px;
+}
+
+.hero-text__title {
+  font-weight: bold;
+  margin: 0 0 50px;
+  font-size: 64px;
+  line-height: 77px;
+  color: #ffffff;
+}
+
+.hero-text__subtitle {
+  margin: 0 0 70px;
+  line-height: 22px;
+  color: #ffffff;
+  max-width: 420px;
+}
+
 @media (max-width: 992px) {
   .header-bottom .container {
     padding: 0;
