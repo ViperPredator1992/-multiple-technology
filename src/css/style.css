@@ -376,6 +376,7 @@ body {
 .container {
   max-width: 1440px;
   margin: auto;
+  padding: 0 15px;
 }
 
 img {
@@ -391,10 +392,11 @@ a {
 }
 
 .phone {
+  color: #000000;
   font-weight: normal;
 }
 
-.header-top {
+.header-top .container {
   min-height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -434,5 +436,32 @@ a {
 .header-top__calls {
   font-weight: bold;
   color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__phone {
+  display: block;
+  line-height: 22px;
+}
+
+.header-bottom {
+  background-color: #090974;
+  min-height: 60px;
+}
+
+.menu-nav__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.menu-nav__link {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
