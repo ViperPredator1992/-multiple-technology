@@ -396,6 +396,16 @@ a {
   font-weight: normal;
 }
 
+.pick-service {
+  background-color: #1B1BB3;
+  color: #ffffff;
+}
+
+.submit-application {
+  background-color: #ffffff;
+  color: #000000;
+}
+
 .menu span {
   display: none;
 }
@@ -587,6 +597,61 @@ a {
   line-height: 22px;
   color: #ffffff;
   max-width: 420px;
+}
+
+.hero-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 70px;
+}
+
+.hero-buttons__link {
+  max-width: 264px;
+  width: 100%;
+  height: 60px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-buttons__link:first-child {
+  margin-right: 30px;
+}
+
+.hero-features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero-features-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #ffffff;
+  width: 240px;
 }
 
 @media (max-width: 992px) {
