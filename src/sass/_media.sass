@@ -7,5 +7,31 @@
         &-nav
             &__item
                 border-bottom: 1px solid $white
+                width: 100%
             &__link
-                padding: 12px 15px                    
+                padding: 12px 15px 
+@media (max-width: 800px)
+    .header
+        &-top
+            padding: 10px 0 
+            & .container
+                max-width: 530px
+@media (max-width: 480px)
+    .header
+        &-top
+            & .container
+                max-width: 320px
+            &__logo
+                margin: auto
+            &__address
+                margin-left: auto
+                font-size: 16px
+                max-width: 240px
+                padding: 8px 0   
+@media (max-width: 335px)
+    .header
+        &-top
+            & .container
+                flex-direction: column
+            &__schedule
+                padding: 5px 0 10px                  
