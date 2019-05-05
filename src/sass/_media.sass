@@ -35,8 +35,12 @@
             margin: auto
             &__title
                 font-size: 34px
-                line-height: 44px
+                line-height: 40px
+                margin: 0 0 30px
+            &__subtitle
+                margin: 0 0 40px    
         &-buttons
+            margin-bottom: 40px
             &__link
                 height: 50px
         &-features
@@ -55,7 +59,28 @@
                 margin-left: auto
                 font-size: 16px
                 max-width: 240px
-                padding: 8px 0   
+                padding: 8px 0 
+    .hero
+        &-text
+            &__title
+                font-size: 26px
+                line-height: 32px
+            &__subtitle
+                font-size: 16px    
+        &-buttons
+            flex-direction: column
+            align-items: center
+            &__link
+                &:first-child
+                    margin-right: 0
+                    margin-bottom: 25px
+@media (max-width: 425px)
+    .hero
+        &-text
+            max-width: 310px
+            &__title
+                font-size: 22px
+                line-height: normal                                
 @media (max-width: 335px)
     .header
         &-top
