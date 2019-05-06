@@ -945,6 +945,13 @@ a {
     font-size: 48px;
     line-height: 60px;
   }
+  .have-question-left {
+    display: none;
+  }
+  .have-question-right {
+    border-radius: 10px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 800px) {
