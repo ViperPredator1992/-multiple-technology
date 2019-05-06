@@ -20,12 +20,14 @@
             max-width: 600px 
 @media (max-width: 1070px)
     .poll
+        &__title
+            margin: 0 0 20px
         &-block
             &s
                 max-width: 600px 
                 margin: auto
     .section-poll
-                                                        
+        padding: 60px 0 40px                                                
 @media (max-width: 992px)
     .header
         &-bottom
@@ -119,6 +121,10 @@
             max-width: 380px
         &-certificate
             justify-content: center
+    .poll
+        &-block
+            &s
+                max-width: 360px       
 @media (max-width: 550px)
     .section-title
         text-align: center
@@ -207,6 +213,11 @@
                 height: 205px
             &__hidden
                 height: 205px
+    .poll
+        &-block
+            &s
+                flex-direction: column
+                align-items: center                
 @media (max-width: 380px)
     .section-why-we
         padding: 40px 0 0

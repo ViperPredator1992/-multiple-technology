@@ -1108,9 +1108,15 @@ a {
 }
 
 @media (max-width: 1070px) {
+  .poll__title {
+    margin: 0 0 20px;
+  }
   .poll-blocks {
     max-width: 600px;
     margin: auto;
+  }
+  .section-poll {
+    padding: 60px 0 40px;
   }
 }
 
@@ -1249,6 +1255,9 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .poll-blocks {
+    max-width: 360px;
+  }
 }
 
 @media (max-width: 550px) {
@@ -1371,6 +1380,15 @@ a {
   }
   .provide-services-block__hidden {
     height: 205px;
+  }
+  .poll-blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
