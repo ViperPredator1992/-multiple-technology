@@ -152,6 +152,9 @@
     .section-title
         text-align: center
         line-height: normal
+    .services-form
+        &__form
+            max-width: 380px    
 @media (max-width: 500px)
     .have-question
         & .container
@@ -202,9 +205,12 @@
                     margin-right: 0
                     margin-bottom: 25px
 @media (max-width: 450px)
-   .section-title
+    .section-title
         font-size: 28px  
-        text-align: center                  
+        text-align: center 
+    .services-form
+        &__form
+            max-width: 310px
 @media (max-width: 425px)
     .hero
         &-text
@@ -247,7 +253,19 @@
         &-block
             &s
                 flex-direction: column
-                align-items: center                
+                align-items: center
+    .services-form
+        &__text
+            margin: 0 0 40px
+            font-size: 15px
+        &__title
+            margin: 0 0 30px
+        &__form
+            max-width: 280px
+        &__input
+            height: 50px
+        &__button
+            height: 50px                                            
 @media (max-width: 380px)
     .section-why-we
         padding: 40px 0 0
@@ -274,12 +292,26 @@
             &__hidden
                 height: 192px 
 @media (max-width: 365px)
-   .provide-services
+    .provide-services
         &-block
             &__image
                 height: 189px
             &__hidden
                 height: 189px
+    .services-form
+        &__title
+            font-size: 28px
+        &__text
+            font-size: 12px 
+        &__form
+            max-width: 240px
+        &__input
+            height: 46px
+            font-size: 16px
+        &__textarea
+            font-size: 16px    
+        &__button
+            height: 46px               
 @media (max-width: 360px)
     .have-question
         &-right

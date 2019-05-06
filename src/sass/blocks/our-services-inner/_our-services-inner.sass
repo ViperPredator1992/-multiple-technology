@@ -33,12 +33,13 @@
             color: $black
             font-weight: normal  
         & ul
-            padding: 0
+            padding: 0 10px
             margin-bottom: 30px              
 .services-form
     max-width: 550px
     border-radius: 10px
     background-color: $button
+    margin: 0 auto 87px
     &__title
         font-size: 36px
         font-weight: bold
@@ -51,4 +52,35 @@
         color: $white
         line-height: 22px
         text-align: center
-        margin: 0 0 97px             
+        margin: 0 0 97px
+    &__form
+        max-width: 480px
+        margin: auto
+        padding-bottom: 40px
+
+    &__input
+        border-radius: 5px
+        height: 60px
+        margin-bottom: 20px
+        border: 1px solid $black
+        line-height: 22px
+        padding: 0 20px
+        background-color: $white
+        &::placeholder
+            color: $grey
+    &__textarea
+        color: $grey
+        border: 1px solid $black
+        height: 173px
+        width: 100%
+        resize: none
+        border-radius: 5px
+        padding: 20px
+        background-color: $white
+        margin-bottom: 20px 
+    &__button
+        font-weight: bold
+        color: $white
+        font-size: 24px
+        line-height: 29px
+        border-radius: 5px                      
