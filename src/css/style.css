@@ -1135,6 +1135,33 @@ a {
   border-bottom: 1px solid #2E3192;
 }
 
+.services-inner-head {
+  background: url(../img/our-services/inner.png) center/cover no-repeat;
+  min-height: 300px;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.services-inner-head::after {
+  content: '';
+  min-height: 300px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.services-inner__title {
+  color: #ffffff;
+  max-width: 700px;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-top: 70px;
+}
+
 @media (max-width: 1170px) {
   .provide-services .container {
     max-width: 780px;
