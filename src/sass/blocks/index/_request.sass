@@ -17,6 +17,12 @@
         max-width: 760px
         margin: auto
         position: relative
+        display: flex
+        &-block
+            position: relative
+            max-width: 460px
+            width: 100%
+            margin-right: 25px
         & svg 
             position: absolute
             top: 12px
@@ -27,8 +33,11 @@
             max-width: 460px
             border: none
             height: 45px
-            margin-right: 25px
-            padding: 0 20px 0 50px
+            padding: 0 20px 0 60px
+            &::placeholder
+                color: $white
+                font-weight: normal
+                opacity: .6
         &__button
             border-radius: 50px
             height: 45px
