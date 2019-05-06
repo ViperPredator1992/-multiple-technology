@@ -36,7 +36,10 @@
         &-right
             border-radius: 10px
             margin: auto
-            &__ 
+            width: 100%
+            max-width: 480px
+            &__form
+                margin: 0 auto 25px 
 @media (max-width: 800px)
     .header
         &-top
@@ -53,6 +56,12 @@
             &s
                 flex-direction: column
                 align-items: center
+    .have-question
+        &-right
+            &__title
+                margin: 40px 0 25px
+            &__list
+                margin: 0 auto 40px                   
 @media (max-width: 1132px)
     .why-we
         &-block
@@ -85,8 +94,18 @@
                 margin: 25px 0 
 @media (max-width: 550px)
     .section-title
-        font-size: 24px
-        line-height: normal                                                                    
+        text-align: center
+        line-height: normal
+@media (max-width: 500px)
+    .have-question
+        & .container
+            padding: 0 5px
+        &-right
+            width: 100%
+            &__list
+                max-width: 310px
+            &__form
+                max-width: 310px                                                                                
 @media (max-width: 480px)
     .header
         &-top
@@ -139,7 +158,13 @@
             &__hidden
                 height: 210px 
 @media (max-width: 390px)
-   .provide-services
+    .have-question
+        &-right
+            &__input
+                height: 50px
+            &__button
+                height: 50px
+    .provide-services
         &-block
             &__image
                 height: 205px
@@ -178,7 +203,15 @@
             &__hidden
                 height: 189px
 @media (max-width: 360px)
-   .provide-services
+    .have-question
+        &-right
+            &__list
+                max-width: 270px
+            &__item
+                font-size: 16px    
+            &__form
+                max-width: 270px       
+    .provide-services
         &-block
             &__image
                 height: 186px
@@ -186,6 +219,7 @@
                 height: 186px
                 &__link
                     height: 40px
+                        
 @media (max-width: 355px)
    .provide-services
         &-block
