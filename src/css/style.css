@@ -413,6 +413,17 @@ a {
   color: #000000;
 }
 
+.input {
+  width: 100%;
+}
+
+.button {
+  width: 100%;
+  background-color: #00B327;
+  height: 60px;
+  border: none;
+}
+
 .menu span {
   display: none;
 }
@@ -810,7 +821,8 @@ a {
 .have-question-left {
   background: url(../img/index/question.jpg) left no-repeat;
   width: 50%;
-  min-height: 704px;
+  min-height: 699px;
+  border-radius: 10px 0 0 10px;
 }
 
 .have-question-right {
@@ -826,9 +838,71 @@ a {
 }
 
 .have-question-right__list {
-  margin: 0;
   padding: 0;
   list-style: none;
+  max-width: 430px;
+  margin: 0 auto 97px;
+}
+
+.have-question-right__item {
+  margin-bottom: 10px;
+  color: #ffffff;
+  line-height: 22px;
+}
+
+.have-question-right__item:last-child {
+  margin-bottom: 0;
+}
+
+.have-question-right__form {
+  max-width: 430px;
+  margin: auto;
+}
+
+.have-question-right__input {
+  border-radius: 5px;
+  height: 60px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  line-height: 22px;
+  padding: 0 20px;
+  background-color: #ffffff;
+}
+
+.have-question-right__input::-webkit-input-placeholder {
+  color: #aaaaaa;
+}
+
+.have-question-right__input:-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+.have-question-right__input::-ms-input-placeholder {
+  color: #aaaaaa;
+}
+
+.have-question-right__input::placeholder {
+  color: #aaaaaa;
+}
+
+.have-question-right__textarea {
+  color: #aaaaaa;
+  border: 1px solid #000000;
+  max-width: 430px;
+  height: 173px;
+  width: 100%;
+  resize: none;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.have-question-right__button {
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 29px;
+  border-radius: 5px;
 }
 
 @media (max-width: 1170px) {

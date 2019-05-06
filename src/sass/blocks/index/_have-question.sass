@@ -4,7 +4,8 @@
     &-left
         background: url(../img/index/question.jpg) left no-repeat
         width: 50%
-        min-height: 704px
+        min-height: 699px
+        border-radius: 10px 0 0 10px
     &-right
         background-color: $button
         border-radius: 0px 10px 10px 0px
@@ -14,6 +15,42 @@
             text-align: center
             color: $white
         &__list
-            margin: 0
             padding: 0
-            list-style: none     
+            list-style: none
+            max-width: 430px
+            margin: 0 auto 97px
+        &__item
+            margin-bottom: 10px
+            color: $white
+            line-height: 22px
+            &:last-child
+                margin-bottom: 0
+        &__form
+            max-width: 430px 
+            margin: auto        
+        &__input                
+            border-radius: 5px
+            height: 60px
+            margin-bottom: 20px
+            border: 1px solid $black
+            line-height: 22px
+            padding: 0 20px
+            background-color: $white
+            &::placeholder
+                color: $grey
+        &__textarea
+            color: $grey
+            border: 1px solid $black
+            max-width: 430px
+            height: 173px
+            width: 100%
+            resize: none 
+            border-radius: 5px
+            padding: 20px 
+            background-color: $white 
+        &__button
+            font-weight: bold
+            color: $white
+            font-size: 24px
+            line-height: 29px 
+            border-radius: 5px  
