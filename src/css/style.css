@@ -1081,6 +1081,11 @@ a {
   padding: 68px 0 79px;
 }
 
+.our-services__title {
+  text-align: center;
+  margin: 0 0 87px;
+}
+
 @media (max-width: 1170px) {
   .provide-services .container {
     max-width: 780px;
