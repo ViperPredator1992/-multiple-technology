@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-   $('.menu-nav__link').click(function () {
-      $('.menu-nav__link').removeClass('current'); 
-      $(this).addClass('current');
-   });
+    $('.menu-nav__link').click(function () {
+        $('.menu-nav__link').removeClass('current'); 
+        $(this).addClass('current');
+    });
 
     if (screen.width < 992) {
         $(".menu").click(function () {
@@ -17,5 +17,13 @@ $(document).ready(function () {
             }
         });
     }
+    
+    $('.submit-application').click(function () {
+        var el = $(this).attr('href');
+        $('html,body').animate({
+            scrollTop: $(el).offset().top - $("header").height()
+        }, 2000);
+        return false;
+    });
 
 });
