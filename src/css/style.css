@@ -1204,6 +1204,8 @@ a {
 .services-form__text {
   color: #ffffff;
   line-height: 22px;
+  text-align: center;
+  margin: 0 0 97px;
 }
 
 @media (max-width: 1170px) {
