@@ -413,6 +413,13 @@ a {
   color: #000000;
 }
 
+.section-second-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: #ffffff;
+}
+
 .input {
   width: 100%;
 }
@@ -942,6 +949,60 @@ a {
 
 .our-clients-certificate__image {
   margin-bottom: 30px;
+}
+
+.section-request {
+  padding: 63px 0 57px;
+}
+
+.request {
+  background: url(../img/index/request.jpg) center/cover no-repeat;
+  min-height: 312px;
+}
+
+.request__title {
+  text-align: center;
+  margin: 0 0 19px;
+}
+
+.request__subtitle {
+  text-align: center;
+  color: #ffffff;
+  line-height: 22px;
+  font-weight: normal;
+  display: block;
+  margin-bottom: 41px;
+}
+
+.request-form {
+  max-width: 760px;
+  margin: auto;
+  position: relative;
+}
+
+.request-form svg {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+}
+
+.request-form__input {
+  background-color: rgba(155, 155, 155, 0.8);
+  border-radius: 50px;
+  max-width: 460px;
+  border: none;
+  height: 45px;
+  margin-right: 25px;
+  padding: 0 20px 0 50px;
+}
+
+.request-form__button {
+  border-radius: 50px;
+  height: 45px;
+  max-width: 263px;
+  width: 100%;
+  color: #ffffff;
+  font-weight: bold;
 }
 
 @media (max-width: 1170px) {
