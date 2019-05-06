@@ -1162,6 +1162,50 @@ a {
   padding-top: 70px;
 }
 
+.services-inner-content {
+  max-width: 754px;
+  margin: auto;
+}
+
+.services-inner-content p {
+  line-height: 22px;
+  color: #000000;
+  margin-bottom: 49px;
+}
+
+.services-inner-content h2 {
+  font-size: 36px;
+  line-height: 43px;
+  color: #000000;
+  font-weight: normal;
+}
+
+.services-inner-content ul {
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.services-form {
+  max-width: 550px;
+  border-radius: 10px;
+  background-color: #1B1BB3;
+}
+
+.services-form__title {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 43px;
+  text-align: center;
+  color: #ffffff;
+  padding-top: 48px;
+  margin: 0 0 55px;
+}
+
+.services-form__text {
+  color: #ffffff;
+  line-height: 22px;
+}
+
 @media (max-width: 1170px) {
   .provide-services .container {
     max-width: 780px;
