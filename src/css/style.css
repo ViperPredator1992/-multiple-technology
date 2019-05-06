@@ -906,6 +906,44 @@ a {
   border-radius: 5px;
 }
 
+.section-our-clients {
+  padding: 99px 0 0;
+}
+
+.our-clients__title {
+  margin: 0 0 80px;
+}
+
+.our-clients-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-clients-images__image {
+  margin-bottom: 30px;
+}
+
+.our-clients-certificate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.our-clients-certificate__image {
+  margin-bottom: 30px;
+}
+
 @media (max-width: 1170px) {
   .provide-services .container {
     max-width: 780px;
@@ -917,8 +955,22 @@ a {
 }
 
 @media (max-width: 1132px) {
+  .why-we-blocks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .why-we .container {
     max-width: 780px;
+  }
+  .section-why-we {
+    padding: 0;
+  }
+}
+
+@media (max-width: 1110px) {
+  .our-clients .container {
+    max-width: 600px;
   }
 }
 
@@ -991,17 +1043,6 @@ a {
   }
 }
 
-@media (max-width: 1132px) {
-  .why-we-blocks {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .section-why-we {
-    padding: 0;
-  }
-}
-
 @media (max-width: 768px) {
   .section-hero {
     padding: 50px 0 36px;
@@ -1038,6 +1079,20 @@ a {
   }
   .hero-features-block:nth-child(2) {
     margin: 25px 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .section-our-clients {
+    padding: 60px 0 0;
+  }
+  .our-clients .container {
+    max-width: 380px;
+  }
+  .our-clients-certificate {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -1134,6 +1189,15 @@ a {
 }
 
 @media (max-width: 390px) {
+  .our-clients-images {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .have-question-right__input {
     height: 50px;
   }
