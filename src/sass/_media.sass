@@ -58,7 +58,30 @@
             width: 100%
             max-width: 480px
             &__form
-                margin: 0 auto 25px 
+                margin: 0 auto 25px
+    .our-services
+        &-block
+            &__link
+                bottom: 0
+@media (max-width: 900px)
+    .our-services
+        &-block
+            max-width: 480px
+            margin: 0 auto 50px
+            &__wrap
+                flex-direction: column
+            &__image
+                margin-right: 0
+                & img
+                    margin: 0 auto 20px    
+            &__title
+                font-size: 20px
+                line-height: 24px 
+            &__description
+                height: 66px
+                overflow: hidden    
+            &__link
+                bottom: -18px                                    
 @media (max-width: 800px)
     .header
         &-top
@@ -144,7 +167,14 @@
         line-height: normal
     .request
         &__subtitle
-            font-size: 16px                                                                                                    
+            font-size: 16px 
+    .our-services
+        &-block
+            max-width: 310px
+            &__text
+                margin: auto
+            &__link
+                bottom: -25px                                                                                                            
 @media (max-width: 480px)
     .header
         &-top
@@ -269,12 +299,22 @@
                     height: 40px
                         
 @media (max-width: 355px)
-   .provide-services
+    .provide-services
         &-block
             &__image
                 height: 183px
             &__hidden
-                height: 183px 
+                height: 183px
+    .our-services
+        & .container
+            padding: 0 10px
+        &-block
+            max-width: 290px
+            &__title
+                font-size: 18px
+                line-height: normal
+            &__description
+                font-size: 16px                 
 @media (max-width: 350px)
    .provide-services
         &-block
