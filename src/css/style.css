@@ -406,6 +406,13 @@ a {
   color: #000000;
 }
 
+.section-title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+}
+
 .menu span {
   display: none;
 }
@@ -672,10 +679,6 @@ a {
 }
 
 .provide-services__title {
-  font-size: 48px;
-  line-height: 58px;
-  color: #000000;
-  font-weight: bold;
   margin: 0 0 80px;
 }
 
@@ -752,13 +755,65 @@ a {
           justify-content: space-between;
 }
 
+.section-why-we {
+  padding: 0 0 50px;
+}
+
+.why-we__title {
+  text-align: center;
+  margin: 0 0 80px;
+}
+
+.why-we-block {
+  max-width: 362px;
+  margin-bottom: 50px;
+}
+
+.why-we-block__image img {
+  display: block;
+  margin: auto;
+}
+
+.why-we-block__title {
+  margin: 30px 0 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #000000;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.why-we-block__text {
+  margin: 0;
+  text-align: center;
+  line-height: 22px;
+  color: #000000;
+}
+
+.why-we-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media (max-width: 1170px) {
   .provide-services .container {
     max-width: 780px;
   }
-  .provide-services__title {
+  .section-title {
     font-size: 38px;
     line-height: 42px;
+  }
+}
+
+@media (max-width: 1132px) {
+  .why-we .container {
+    max-width: 780px;
   }
 }
 
@@ -798,7 +853,7 @@ a {
   .section-provide-services {
     padding: 50px 0 0;
   }
-  .provide-services__title {
+  .section-title {
     font-size: 30px;
     margin: 0 0 40px;
   }
@@ -810,6 +865,17 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 1132px) {
+  .why-we-blocks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .section-why-we {
+    padding: 0;
   }
 }
 
@@ -853,7 +919,7 @@ a {
 }
 
 @media (max-width: 550px) {
-  .provide-services__title {
+  .section-title {
     font-size: 24px;
     line-height: normal;
   }
@@ -895,8 +961,8 @@ a {
 }
 
 @media (max-width: 450px) {
-  .provide-services__title {
-    font-size: 22px;
+  .section-title {
+    font-size: 26px;
     text-align: center;
   }
 }

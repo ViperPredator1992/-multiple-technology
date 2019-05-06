@@ -2,9 +2,13 @@
     .provide-services
         & .container
             max-width: 780px
-        &__title
-            font-size: 38px
-            line-height: 42px    
+    .section-title
+        font-size: 38px
+        line-height: 42px  
+@media (max-width: 1132px)
+    .why-we
+        & .container
+            max-width: 780px          
 @media (max-width: 992px)
     .header
         &-bottom
@@ -33,15 +37,22 @@
             & .container
                 max-width: 530px
     .section-provide-services
-        padding: 50px 0 0                
+        padding: 50px 0 0
+    .section-title
+        font-size: 30px
+        margin: 0 0 40px
     .provide-services
-        &__title
-            font-size: 30px
-            margin: 0 0 40px
         &-block
             &s
                 flex-direction: column
-                align-items: center                
+                align-items: center
+@media (max-width: 1132px)
+    .why-we
+        &-block
+            &s
+                justify-content: center
+    .section-why-we
+        padding: 0                                            
 @media (max-width: 768px)
     .section-hero
         padding: 50px 0 36px 
@@ -66,10 +77,9 @@
             &-block:nth-child(2)
                 margin: 25px 0 
 @media (max-width: 550px)
-   .provide-services
-        &__title
-            font-size: 24px
-            line-height: normal                                                                    
+    .section-title
+        font-size: 24px
+        line-height: normal                                                                    
 @media (max-width: 480px)
     .header
         &-top
@@ -97,10 +107,9 @@
                     margin-right: 0
                     margin-bottom: 25px
 @media (max-width: 450px)
-   .provide-services
-        &__title
-            font-size: 22px  
-            text-align: center                  
+   .section-title
+        font-size: 26px  
+        text-align: center                  
 @media (max-width: 425px)
     .hero
         &-text
