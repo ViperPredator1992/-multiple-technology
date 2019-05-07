@@ -1,10 +1,21 @@
+@media (max-width: 1240px)
+    .partners
+        &-block
+            &-text
+                margin-left: 20px
 @media (max-width: 1170px)
     .provide-services
         & .container
             max-width: 780px
     .section-title
         font-size: 38px
-        line-height: 42px  
+        line-height: 42px
+    .partners
+        &-block
+            &-text
+                &__title
+                    font-size: 40px
+                    margin: 5px 0 17px      
 @media (max-width: 1132px)
     .why-we
         &-block
@@ -17,7 +28,18 @@
 @media (max-width: 1110px)
     .our-clients
         & .container
-            max-width: 600px 
+            max-width: 600px
+    .partners
+        &-block
+            flex-direction: column
+            align-items: center
+            &-text
+                &__image
+                    top: 330px
+                    right: 0 
+        &-slide
+            &-block
+                margin-bottom: 20px                                    
 @media (max-width: 1070px)
     .poll
         &__title
@@ -136,6 +158,19 @@
             align-items: center
             &-block:nth-child(2)
                 margin: 25px 0
+    .partners
+        &-block
+            margin-bottom: 35px
+            &-text
+                margin-left: 0
+                max-width: 427px
+                &__title
+                    text-align: center
+                    margin: 0 0 15px
+                & p
+                    margin: 0 0 15px
+                &__image
+                    display: none                
 @media (max-width: 580px)
     .section-our-clients 
         padding: 60px 0 0
@@ -154,7 +189,19 @@
         line-height: normal
     .services-form
         &__form
-            max-width: 380px    
+            max-width: 380px
+    .partners
+        &__title
+            font-size: 40px
+            line-height: normal
+            margin: 0 0 40px
+        &-block
+            &-text
+                &__title
+                    font-size: 32px
+                    line-height: normal
+    .section-partners
+        padding: 30px 0 90px                                     
 @media (max-width: 500px)
     .have-question
         & .container
@@ -218,6 +265,11 @@
             &__title
                 font-size: 22px
                 line-height: normal
+@media (max-width: 411px)
+    .arrows-right__arrow
+        top: 130px
+    .arrows-left__arrow
+        top: 130px                    
 @media (max-width: 406px)
    .provide-services
         &-block
