@@ -38,8 +38,7 @@ $(document).ready(function () {
         loop: true,
         margin: 10,
         nav: true,
-        items: 1,
-        dots: false
+        items: 1
     });
 
 });

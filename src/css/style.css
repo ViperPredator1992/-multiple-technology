@@ -1306,6 +1306,7 @@ a {
 
 .partners-slide {
   max-width: 427px;
+  height: 321px;
 }
 
 .partners-slide-block {
@@ -1332,6 +1333,11 @@ a {
   top: 140px;
   right: 12px;
   cursor: pointer;
+}
+
+.partners-slide .owl-nav.disabled,
+.partners-slide .owl-dots.disabled {
+  display: block !important;
 }
 
 /**
