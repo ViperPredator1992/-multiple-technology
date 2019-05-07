@@ -718,7 +718,7 @@ $(document).ready(function () {
         return false;
     });
 
-    $('.partner-slide').slick({
+    $('.partners-slide').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,

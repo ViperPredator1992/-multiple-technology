@@ -6,4 +6,40 @@
         font-weight: bold
         font-size: 64px
         line-height: 77px 
-        margin: 0 0 60px   
+        margin: 0 0 60px
+    &-block
+        position: relative
+        display: flex
+        margin-bottom: 75px
+        &-text
+            max-width: 620px
+            margin-left: 70px
+            &__title
+                margin: 0 0 22px
+                font-weight: bold
+                font-size: 48px
+                line-height: 58px 
+                color: $black
+            &__image
+                position: absolute
+                top: -15px
+                right: -15px    
+            & p
+                margin: 0 0 20px          
+    &-slide
+        &-block
+            position: relative 
+            max-width: 427px
+            width: 100%
+.arrows-left__arrow
+    position: absolute
+    top: 140px 
+    left: 12px
+    cursor: pointer
+    & img 
+        transform: rotate(180deg) 
+.arrows-right__arrow
+    position: absolute
+    top: 140px 
+    right: 12px
+    cursor: pointer                  
