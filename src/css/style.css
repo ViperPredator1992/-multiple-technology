@@ -1335,9 +1335,17 @@ a {
   cursor: pointer;
 }
 
-.partners-slide .owl-nav.disabled,
-.partners-slide .owl-dots.disabled {
-  display: block !important;
+.partners-slide .owl-item img {
+  max-height: 321px;
+}
+
+.partners-slide .owl-nav button.owl-prev,
+.partners-slide .owl-nav button.owl-next {
+  font-size: 0 !important;
+}
+
+.partners-slide .owl-nav button.owl-prev {
+  background: url(../img/partners/arrow.png) no-repeat;
 }
 
 /**
