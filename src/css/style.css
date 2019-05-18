@@ -1164,6 +1164,10 @@ a {
           justify-content: space-between;
 }
 
+.section-articles-us {
+  padding: 0 0 100px;
+}
+
 .our-services {
   padding: 68px 0 79px;
 }
