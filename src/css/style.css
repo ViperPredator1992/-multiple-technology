@@ -1055,8 +1055,17 @@ a {
 }
 
 .poll-block__link {
+  border-radius: 10px;
   display: block;
-  width: 166px;
+  padding: 22px 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.poll-block__link:hover {
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.25);
 }
 
 .poll-block__text {
