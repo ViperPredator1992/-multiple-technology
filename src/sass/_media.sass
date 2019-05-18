@@ -49,7 +49,12 @@
                 max-width: 600px 
                 margin: auto
     .section-poll
-        padding: 60px 0 40px                                                
+        padding: 60px 0 40px
+@media (max-width: 1000px)
+    .we-work
+        &-block
+            &::after
+                right: -70px                                                        
 @media (max-width: 992px)
     .header
         &-bottom
@@ -103,7 +108,26 @@
                 height: 66px
                 overflow: hidden    
             &__link
-                bottom: -18px                                    
+                bottom: -18px
+@media (max-width: 850px)
+    .we-work
+        &-block
+            width: 40%
+            &:nth-child(2)
+                &::after
+                    display: none
+            &:nth-child(4)
+                &::after
+                    display: none                    
+            &:nth-child(3)
+                &::after
+                    top: 95px
+                    right: -70px
+                    left: auto
+                    transform: translateX(0%) rotate(0deg)
+            &:nth-child(5)
+                &::after 
+                    transform: rotate(0deg)       
 @media (max-width: 800px)
     .header
         &-top
@@ -201,7 +225,16 @@
                     font-size: 32px
                     line-height: normal
     .section-partners
-        padding: 30px 0 90px                                     
+        padding: 30px 0 90px
+    .section-we-work
+        padding: 50px 0 0    
+    .we-work
+        &-block
+            margin-bottom: 30px
+            &::after
+                display: none
+            &:last-child
+                margin-bottom: 0                                         
 @media (max-width: 500px)
     .have-question
         & .container
@@ -260,7 +293,11 @@
             max-width: 310px
     .partners-slide .owl-nav button.owl-next,
     .partners-slide .owl-nav button.owl-prev
-        top: 150px        
+        top: 150px
+    .we-work
+        &-block
+            width: 90%
+            margin: 0 auto 25px            
 @media (max-width: 425px)
     .hero
         &-text

@@ -16,6 +16,23 @@
             position: absolute
             top: 95px
             right: -90px
+        &:nth-child(3)
+            &::after
+                content: ''
+                background: url(../img/index/arrow.jpg) no-repeat
+                width: 30px
+                height: 8px
+                position: absolute
+                top: 200px
+                left: 50%
+                transform: translateX(-50%) rotate(90deg)
+        &:nth-child(4),
+        &:nth-child(5)
+            &::after
+                transform: rotate(180deg)               
+        &:last-child
+            &::after
+                display: none        
         &__image
             margin: 0 auto 20px
             display: block 

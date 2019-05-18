@@ -845,6 +845,29 @@ a {
   right: -90px;
 }
 
+.we-work-block:nth-child(3)::after {
+  content: '';
+  background: url(../img/index/arrow.jpg) no-repeat;
+  width: 30px;
+  height: 8px;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) rotate(90deg);
+      -ms-transform: translateX(-50%) rotate(90deg);
+          transform: translateX(-50%) rotate(90deg);
+}
+
+.we-work-block:nth-child(4)::after, .we-work-block:nth-child(5)::after {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.we-work-block:last-child::after {
+  display: none;
+}
+
 .we-work-block__image {
   margin: 0 auto 20px;
   display: block;
@@ -1769,6 +1792,12 @@ a {
   }
 }
 
+@media (max-width: 1000px) {
+  .we-work-block::after {
+    right: -70px;
+  }
+}
+
 @media (max-width: 992px) {
   .header-bottom .container {
     padding: 0;
@@ -1837,6 +1866,31 @@ a {
   }
   .our-services-block__link {
     bottom: -18px;
+  }
+}
+
+@media (max-width: 850px) {
+  .we-work-block {
+    width: 40%;
+  }
+  .we-work-block:nth-child(2)::after {
+    display: none;
+  }
+  .we-work-block:nth-child(4)::after {
+    display: none;
+  }
+  .we-work-block:nth-child(3)::after {
+    top: 95px;
+    right: -70px;
+    left: auto;
+    -webkit-transform: translateX(0%) rotate(0deg);
+        -ms-transform: translateX(0%) rotate(0deg);
+            transform: translateX(0%) rotate(0deg);
+  }
+  .we-work-block:nth-child(5)::after {
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
@@ -1979,6 +2033,18 @@ a {
   .section-partners {
     padding: 30px 0 90px;
   }
+  .section-we-work {
+    padding: 50px 0 0;
+  }
+  .we-work-block {
+    margin-bottom: 30px;
+  }
+  .we-work-block::after {
+    display: none;
+  }
+  .we-work-block:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -2058,6 +2124,10 @@ a {
   .partners-slide .owl-nav button.owl-next,
   .partners-slide .owl-nav button.owl-prev {
     top: 150px;
+  }
+  .we-work-block {
+    width: 90%;
+    margin: 0 auto 25px;
   }
 }
 
