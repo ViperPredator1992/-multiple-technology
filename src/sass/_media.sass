@@ -39,7 +39,13 @@
                     top: 330px
                     right: 0 
         &-slide
-            margin-bottom: 20px                                    
+            margin-bottom: 20px 
+    .articles-us
+        &-block
+            max-width: 360px
+            &s
+                max-width: 760px
+                margin: auto                                               
 @media (max-width: 1070px)
     .poll
         &__title
@@ -194,7 +200,21 @@
                 & p
                     margin: 0 0 15px
                 &__image
-                    display: none                
+                    display: none
+    .articles-us
+        &-top
+            padding-bottom: 20px
+            flex-direction: column
+            &__subtitle
+                margin-bottom: 20px
+        &-block
+            max-width: none
+            margin-bottom: 15px
+            &__title
+                font-size: 22px
+                line-height: normal        
+    .section-articles-us
+        padding: 0 0 30px                                                    
 @media (max-width: 580px)
     .section-our-clients 
         padding: 60px 0 0

@@ -1895,6 +1895,13 @@ a {
   .partners-slide {
     margin-bottom: 20px;
   }
+  .articles-us-block {
+    max-width: 360px;
+  }
+  .articles-us-blocks {
+    max-width: 760px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 1070px) {
@@ -2111,6 +2118,27 @@ a {
   }
   .partners-block-text__image {
     display: none;
+  }
+  .articles-us-top {
+    padding-bottom: 20px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .articles-us-top__subtitle {
+    margin-bottom: 20px;
+  }
+  .articles-us-block {
+    max-width: none;
+    margin-bottom: 15px;
+  }
+  .articles-us-block__title {
+    font-size: 22px;
+    line-height: normal;
+  }
+  .section-articles-us {
+    padding: 0 0 30px;
   }
 }
 
