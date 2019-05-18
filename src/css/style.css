@@ -820,6 +820,61 @@ a {
           justify-content: space-between;
 }
 
+.section-we-work {
+  padding: 100px 0 0;
+}
+
+.we-work__title {
+  margin: 0 0 80px;
+}
+
+.we-work-block {
+  width: 25.5%;
+  text-align: center;
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.we-work-block::after {
+  content: '';
+  background: url(../img/index/arrow.jpg) no-repeat;
+  width: 30px;
+  height: 8px;
+  position: absolute;
+  top: 95px;
+  right: -90px;
+}
+
+.we-work-block__image {
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.we-work-block__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.we-work-block__subtext {
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  opacity: .4;
+}
+
+.we-work-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .have-question .container {
   display: -webkit-box;
   display: -ms-flexbox;
