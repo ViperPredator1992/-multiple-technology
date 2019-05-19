@@ -1929,6 +1929,19 @@ a {
   width: 100%;
 }
 
+.section-contact {
+  padding: 60px 0 120px;
+}
+
+.contact__title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 64px;
+  line-height: 77px;
+  color: #000000;
+  margin: 0 0 35px;
+}
+
 @media (max-width: 1247px) {
   .partners-block-text {
     margin-left: 20px;
