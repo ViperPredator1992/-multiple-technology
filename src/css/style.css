@@ -2386,6 +2386,58 @@ a {
   color: #000000;
 }
 
+.section-cabinets-hero {
+  padding: 102px 0 101px;
+}
+
+.cabinets-hero {
+  background: url(../img/cabinets/cabinets.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 580px;
+}
+
+.cabinets-hero__title {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 77px;
+  color: #ffffff;
+  margin: 0 0 40px;
+}
+
+.cabinets-hero-list {
+  padding: 0;
+  margin: 0 0 90px;
+  list-style: none;
+}
+
+.cabinets-hero-list__item {
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.cabinets-hero__link {
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-size: 18px;
+  width: 264px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #000000;
+}
+
 @media (max-width: 1247px) {
   .partners-block-text {
     margin-left: 20px;
@@ -2568,6 +2620,15 @@ a {
   }
   .our-services-block__link {
     bottom: -18px;
+  }
+  .section-cabinets-hero {
+    padding: 80px 0 90px;
+  }
+  .cabinets-hero {
+    min-height: 550px;
+  }
+  .cabinets-hero__title {
+    font-size: 44px;
   }
 }
 
@@ -2763,6 +2824,26 @@ a {
   }
 }
 
+@media (max-width: 700px) {
+  .section-cabinets-hero {
+    padding: 50px 0;
+  }
+  .cabinets-hero {
+    min-height: 430px;
+  }
+  .cabinets-hero__title {
+    margin: 0 0 25px;
+    line-height: 57px;
+  }
+  .cabinets-hero-list {
+    margin: 0 0 60px;
+  }
+  .cabinets-hero-list__item {
+    font-size: 21px;
+    line-height: normal;
+  }
+}
+
 @media (max-width: 653px) {
   .become-partner__title {
     line-height: normal;
@@ -2884,6 +2965,30 @@ a {
   .hero-buttons__link:first-child {
     margin-right: 0;
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 460px) {
+  .section-cabinets-hero {
+    padding: 35px 0;
+  }
+  .cabinets-hero {
+    min-height: 360px;
+  }
+  .cabinets-hero__title {
+    line-height: normal;
+    font-size: 32px;
+  }
+  .cabinets-hero-list {
+    margin: 0 0 35px;
+  }
+  .cabinets-hero-list__item {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  .cabinets-hero__link {
+    height: 48px;
+    width: 240px;
   }
 }
 
@@ -3065,6 +3170,9 @@ a {
 }
 
 @media (max-width: 375px) {
+  .cabinets-hero__title {
+    font-size: 28px;
+  }
   .provide-services-block__image {
     height: 196px;
   }
