@@ -135,11 +135,12 @@ a
         border-radius: 10px 
         font-size: 18px
         text-indent: 8px
-        color: rgba(0,0,0, .5)
         height: 60px
         border: none
         padding: 0 15px
         margin-bottom: 34px
+        &:focus::placeholder
+            color: rgba(0,0,0, .5)
     &__textarea
         resize: none
         padding: 15px
@@ -150,18 +151,40 @@ a
         color: rgba(0,0,0, .5)
         height: 173px
         width: 100%
-        border: none   
+        border: none
+        &:focus
+            color: red      
     &-block
         margin: 20px auto 16px
         &__politic
             text-decoration: underline
             color: #000
             display: block
-            padding-left: 3px      
+            padding-left: 3px 
+    &-button
+        &__button
+            max-width: 337px
+            height: 60px
+            color: #fff
+            display: flex
+            align-items: center
+            justify-content: center
+            margin: auto
+            box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.25)
+            border-radius: 50px 
+            transition: .2s
+            font-weight: bold
+            font-size: 24px
+            position: relative
+            top: 0
+            &:hover
+                padding: 5px 0
+                background-color: #027B1D
+                box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.4)             
 .item-check
     display: flex
     justify-content: center 
-    align-items: baseline 
+    align-items: flex-end 
     font-size: 14px
 .check
     margin-right: 10px
@@ -169,4 +192,24 @@ a
     width: 20px
     height: 20px
     border: 1px solid #000 
-    border-radius: 50%       
+    border-radius: 50% 
+.check input
+    opacity: 0
+    width: 20px
+    height: 20px
+.check span
+    display: block
+    width: 13px
+    height: 11px
+    position: absolute
+    top: 3px
+    left: 2px
+    transition: .2s
+    z-index: 1
+    transform: scale(0) 
+.check input:checked + span 
+    transform: scale(1)
+    background: url(../img/checkbox.png) no-repeat
+    width: 12px
+    height: 12px
+    background-size: 100%                
