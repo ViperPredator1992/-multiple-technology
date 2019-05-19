@@ -58,7 +58,7 @@
                                 <a href="partners.html" class="menu-nav__link">Партнеры</a>
                             </li>
                             <li class="menu-nav__item">
-                                <a href="#" class="menu-nav__link">Шкафы</a>
+                                <a href="cabinets.html" class="menu-nav__link">Шкафы</a>
                             </li>
                             <li class="menu-nav__item">
                                 <a href="contact.html" class="menu-nav__link">Контакты</a>
@@ -154,16 +154,29 @@
                     <p>Вам требуется поставка оборудования, монтаж или демонтаж специального грузоподъёмного механизма,
                         который соответствует вашим требованиям, но не имеет аналогов? Обращайтесь к нам за проектом. С
                         нами вы достигнете нужного результата и сделаете работу максимально быстро и безопасно.</p>
-                    <div class="services-form">
-                        <h3 class="services-form__title">Оставьте заявку</h3>
-                        <div class="services-form__text">Поможем определиться с составом работ<br>
-                            Отправим КП в течение дня<br>
-                            При заказе комплексных работ – скидка</div>
-                        <form action="#" class="services-form__form form">
-                            <input class="services-form__input input" type="tel" name="phone" placeholder="Введите номер телефона"
+                    <div class="services-form application-form">
+                        <h3 class="application-form__title">Оставьте заявку</h3>
+                        <p class="application-form__text">Поможем определиться с составом работ</p>
+                        <p class="application-form__text">Отправим КП в течение дня</p>
+                        <p class="application-form__text">При заказе комплексных работ – скидка</p>
+                        <form action="#" class="application-form__form" method="POST">
+                            <p class="application-form__name">Введите номер телефона:</p>
+                            <input type="tel" class="application-form__input input" name="phone" placeholder="+7 ("
                                 value="">
-                            <textarea class="services-form__textarea textarea" name="">Ваш вопрос</textarea>
-                            <button type="submit" class="services-form__button button">Отправить</button>
+                            <p class="application-form__name">Ваш вопрос:</p>
+                            <textarea class="application-form__textarea" name=""
+                                placeholder="Что вы хотите уточнить?"></textarea>
+                            <div class="application-form-block">
+                                <label class="item-check">
+                                    <div class="check">
+                                        <input type="checkbox">
+                                        <span></span>
+                                    </div>
+                                    согласен c<a href="" class="application-form-block__politic"> политикой
+                                        конфиденциальности</a>
+                                </label>
+                            </div>
+                            <button class="application-form__button button" type="submit">Отправить</button>
                         </form>
                     </div>
                 </div>
