@@ -194,8 +194,8 @@ a
     justify-content: center 
     align-items: flex-end 
     font-size: 14px
-.check
     cursor: pointer
+.check
     margin-right: 10px
     position: relative
     width: 20px
@@ -260,4 +260,11 @@ a
         align-items: center
     .application-form
         &__button
-            max-width: 270px                
+            max-width: 270px 
+@media (max-width: 350px)
+    .application-form
+        &__title
+            font-size: 30px
+        &__button
+            font-size: 20px
+            max-width: 230px                               
