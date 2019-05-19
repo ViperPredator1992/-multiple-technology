@@ -1467,7 +1467,7 @@ a {
 }
 
 .section-partners {
-  padding: 53px 0 100px;
+  padding: 53px 0 60px;
 }
 
 .partners__title {
@@ -1618,7 +1618,6 @@ a {
   color: #000000;
   opacity: 0.5;
   font-size: 18px;
-  line-height: 22px;
 }
 
 .become-partner-block__textarea {
@@ -1649,10 +1648,16 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  height: 60px;
+  max-width: 360px;
+  margin: auto;
+  border-radius: 50px;
+  -webkit-box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.25);
 }
 
 .become-partner-block img {
-  margin: 0 auto 20px;
+  margin: 40px auto 20px;
   display: block;
 }
 
@@ -2046,6 +2051,12 @@ a {
   .our-services-block__link {
     bottom: 0;
   }
+  .become-partner__form {
+    max-width: 850px;
+  }
+  .become-partner-block {
+    max-width: 400px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -2100,6 +2111,12 @@ a {
     -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
             transform: rotate(0deg);
+  }
+  .become-partner__form {
+    max-width: 750px;
+  }
+  .become-partner-block {
+    max-width: 340px;
   }
 }
 
@@ -2216,6 +2233,32 @@ a {
   }
   .section-articles-us {
     padding: 0 0 30px;
+  }
+  .become-partner__form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .become-partner-block {
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+  .become-partner-block:last-child {
+    margin-bottom: 0;
+  }
+  .become-partner-block img {
+    margin: 0 auto 20px;
+  }
+}
+
+@media (max-width: 653px) {
+  .become-partner__title {
+    line-height: normal;
+    font-size: 36px;
   }
 }
 
@@ -2364,6 +2407,28 @@ a {
   .hero-text__title {
     font-size: 22px;
     line-height: normal;
+  }
+  .partners-blocks {
+    margin-bottom: 40px;
+  }
+  .become-partner-block__title {
+    font-size: 16px;
+    line-height: normal;
+    margin-bottom: 8px;
+    text-indent: 10px;
+  }
+  .become-partner-block__input {
+    height: 50px;
+    font-size: 16px;
+    padding: 0 15px;
+  }
+  .become-partner-block__textarea {
+    padding: 15px;
+    font-size: 16px;
+  }
+  .become-partner-block__button {
+    height: 50px;
+    font-size: 22px;
   }
 }
 
