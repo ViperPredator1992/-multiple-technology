@@ -504,6 +504,103 @@ a {
   }
 }
 
+.application-form {
+  max-width: 550px;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 51px 33px 35px;
+}
+
+.application-form__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  color: #000;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.application-form__text {
+  font-size: 18px;
+  color: #000;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.application-form__form {
+  margin-top: 40px;
+}
+
+.application-form__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-indent: 20px;
+  color: #000;
+  margin: 0 0 15px;
+}
+
+.application-form__input {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 18px;
+  text-indent: 8px;
+  color: rgba(0, 0, 0, 0.5);
+  height: 60px;
+  border: none;
+  padding: 0 15px;
+  margin-bottom: 34px;
+}
+
+.application-form__textarea {
+  resize: none;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 18px;
+  text-indent: 8px;
+  color: rgba(0, 0, 0, 0.5);
+  height: 173px;
+  width: 100%;
+  border: none;
+}
+
+.application-form-block {
+  margin: 20px auto 16px;
+}
+
+.application-form-block__politic {
+  text-decoration: underline;
+  color: #000;
+  display: block;
+  padding-left: 3px;
+}
+
+.item-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  font-size: 14px;
+}
+
+.check {
+  margin-right: 10px;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
 .header-top .container {
   min-height: 100px;
   display: -webkit-box;
@@ -1960,6 +2057,15 @@ a {
   margin: 0 0 30px;
 }
 
+.contact-blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .vcard {
   max-width: 500px;
 }
@@ -1984,69 +2090,6 @@ a {
 
 .vcard div .email {
   text-transform: lowercase;
-}
-
-.application-form {
-  max-width: 550px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  padding: 51px 33px 35px;
-}
-
-.application-form__title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 43px;
-  color: #000000;
-  margin: 0 0 20px;
-  text-align: center;
-}
-
-.application-form__text {
-  font-size: 18px;
-  color: #000000;
-  margin: 0 0 10px;
-  text-align: center;
-}
-
-.application-form__form {
-  margin-top: 40px;
-}
-
-.application-form__name {
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  text-indent: 20px;
-  color: #000000;
-  margin: 0 0 15px;
-}
-
-.application-form__input {
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  font-size: 18px;
-  text-indent: 20px;
-  color: rgba(0, 0, 0, 0.5);
-  height: 60px;
-  border: none;
-  padding: 0 15px;
-  margin-bottom: 34px;
-}
-
-.application-form__textarea {
-  resize: none;
-  padding: 15px;
-  background: rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  font-size: 18px;
-  text-indent: 20px;
-  color: rgba(0, 0, 0, 0.5);
-  height: 173px;
-  width: 100%;
-  border: none;
 }
 
 @media (max-width: 1247px) {
