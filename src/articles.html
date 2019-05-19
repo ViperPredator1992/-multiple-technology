@@ -70,15 +70,15 @@
         </header>
         <section class="section-articles articles">
             <div class="container">
-                <h1 class="articles__title filter">Статьи</h1>
-                <div class="articles-list">
+                <h1 class="articles__title">Статьи</h1>
+                <div class="articles-list filter">
                     <a href="#" class="articles-list__link" data-filter=".about-cranes">о кранах</a>
                     <a href="#" class="articles-list__link" data-filter=".instructions">Инструкции</a>
                     <a href="#" class="articles-list__link"  data-filter=".story">История</a>
                     <a href="#" class="articles-list__link" data-filter=".success">Наши успехи</a>
                 </div>
                 <div class="articles-blocks">
-                    <div class="articles-block port-block">
+                    <div class="articles-block about-cranes port-block">
                         <div class="articles-block__image">
                             <img src="img/articles/article.jpg" alt="article">
                         </div>
@@ -87,7 +87,7 @@
                         <p class="articles-block__text">Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
                         <div class="articles-block__date">24 мая</div>
                     </div>
-                    <div class="articles-block port-block">
+                    <div class="articles-block about-cranes instructions port-block">
                         <div class="articles-block__image">
                             <img src="img/articles/article.jpg" alt="article">
                         </div>
@@ -96,7 +96,7 @@
                         <p class="articles-block__text">Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
                         <div class="articles-block__date">24 мая</div>
                     </div>
-                    <div class="articles-block port-block">
+                    <div class="articles-block about-cranes instructions port-block">
                         <div class="articles-block__image">
                             <img src="img/articles/article.jpg" alt="article">
                         </div>
@@ -105,7 +105,7 @@
                         <p class="articles-block__text">Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
                         <div class="articles-block__date">24 мая</div>
                     </div>
-                    <div class="articles-block port-block">
+                    <div class="articles-block about-cranes port-block">
                         <div class="articles-block__image">
                             <img src="img/articles/article.jpg" alt="article">
                         </div>
@@ -114,7 +114,7 @@
                         <p class="articles-block__text">Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
                         <div class="articles-block__date">24 мая</div>
                     </div>
-                    <div class="articles-block port-block">
+                    <div class="articles-block about-cranes success port-block">
                         <div class="articles-block__image">
                             <img src="img/articles/article.jpg" alt="article">
                         </div>
@@ -123,7 +123,7 @@
                         <p class="articles-block__text">Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития. Таким образом реализация намеченных плановых заданий позволяет оценить значение новых предложений. Повседневная практика показывает, что реализация намеченных плановых заданий в значительной степени обуславливает создание модели развития.</p>
                         <div class="articles-block__date">24 мая</div>
                     </div>
-                    <div class="articles-block port-block">
+                    <div class="articles-block about-cranes instructions success port-block">
                         <div class="articles-block__image">
                             <img src="img/articles/article.jpg" alt="article">
                         </div>
@@ -142,16 +142,18 @@
             $('.articles-blocks').isotope({
                 itemSelector: '.port-block'
             });
-            $('.filter a').click(function () {
-                var selector = $(this).attr('data-filter');
-                $('.quest-block').isotope({
-                    filter: selector,
-                    animationOptions: {
-                    duration: 1000,
-                    easing: 'easeOutQuart',
-                    queue: false
-                    }
-                });
+            $('.filter .articles-list__link').click(function(){
+                $('.filter .articles-list__link').removeClass('current');
+                    $(this).addClass('current');
+                    var selector = $(this).attr('data-filter');
+                    $('.articles-blocks').isotope({
+                            filter: selector,
+                            animationOptions: {
+                            duration: 1000,
+                            easing: 'easeOutQuart',
+                            queue: false
+                        }
+                    });
                 return false;
             });
         });
