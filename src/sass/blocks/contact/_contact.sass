@@ -22,7 +22,7 @@
             font-size: 36px
             line-height: 43px
             color: $black 
-            margin: 0 0 30px  
+            margin: 0 0 30px 
 .vcard
     max-width: 500px             
 .vcard div
@@ -32,8 +32,45 @@
     text-transform: uppercase
     color: rgba(0,0,0, .5)  
 .vcard div span
-    margin-bottom: 20px
-    font-weight: normal;
-font-size: 18px;
-line-height: 22px;
-color: $    
+    margin: 5px 0 20px
+    display: inline-block
+    font-weight: normal
+    font-size: 18px
+    line-height: 22px
+    color: $black
+    text-transform: initial
+.vcard div .email
+    text-transform: lowercase 
+.application-form           
+    max-width: 550px
+    border: 1px solid rgba(0, 0, 0, 0.3)
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    padding: 51px 33px 35px
+    &__title
+        font-weight: bold
+        font-size: 36px
+        line-height: 43px
+        color: $black
+        margin: 0 0 20px
+        text-align: center
+    &__text
+        font-size: 18px
+        color: $black
+        margin: 0 0 10px
+        text-align: center  
+    &__name
+        font-weight: bold
+        font-size: 18px
+        line-height: 22px
+        text-indent: 20px
+        color: $black
+        margin: 0 0 15px
+    &__input
+        background: rgba(0, 0, 0, 0.1)
+        border-radius: 10px 
+        font-size: 18px
+        text-indent: 20px
+        color: rgba(0,0,0, .5)
+        height: 60px
+        border: none
