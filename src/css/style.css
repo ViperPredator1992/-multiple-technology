@@ -2011,6 +2011,10 @@ a {
   text-align: center;
 }
 
+.application-form__form {
+  margin-top: 40px;
+}
+
 .application-form__name {
   font-weight: bold;
   font-size: 18px;
@@ -2027,6 +2031,21 @@ a {
   text-indent: 20px;
   color: rgba(0, 0, 0, 0.5);
   height: 60px;
+  border: none;
+  padding: 0 15px;
+  margin-bottom: 34px;
+}
+
+.application-form__textarea {
+  resize: none;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-size: 18px;
+  text-indent: 20px;
+  color: rgba(0, 0, 0, 0.5);
+  height: 173px;
+  width: 100%;
   border: none;
 }
 
