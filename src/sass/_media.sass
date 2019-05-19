@@ -11,7 +11,15 @@
             &-text
                 max-width: none
                 margin: 30px 0
-                padding-right: 0                
+                padding-right: 0 
+@media (max-width: 1185px)
+    .articles
+        & .container
+            max-width: 790px
+        &-list
+            margin-bottom: 50px 
+            &__link
+                margin: 0 20px   
 @media (max-width: 1170px)
     .provide-services
         & .container
@@ -149,7 +157,23 @@
         &__form
             max-width: 750px
         &-block
-            max-width: 340px                        
+            max-width: 340px
+@media (max-width: 806px)
+    .articles
+        & .container
+            max-width: 400px 
+        &-list
+            flex-direction: column
+            align-items: center
+            &__link
+                margin: 0 10px
+                line-height: normal       
+    .pagination 
+        & .next, 
+        & .prev
+            display: none
+        &-number
+            margin: auto                                                
 @media (max-width: 800px)
     .header
         &-top
@@ -394,13 +418,15 @@
     .partners-slide .owl-nav button.owl-next,
     .partners-slide .owl-nav button.owl-prev
         top: 135px                      
+@media (max-width: 408px)
+                                 
 @media (max-width: 406px)
    .provide-services
         &-block
             &__image
                 height: 214px
             &__hidden
-                height: 214px  
+                height: 214px
 @media (max-width: 400px)
    .provide-services
         &-block

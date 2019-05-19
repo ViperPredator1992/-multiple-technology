@@ -1,6 +1,8 @@
 .section-articles
     padding: 60px 0 80px
 .articles
+    & .conatiner
+        max-width: 1150px
     &__title    
         font-weight: bold
         font-size: 64px
@@ -31,7 +33,6 @@
         margin: 0 10px 50px
         padding: 0 15px
         &s
-            max-width: 1150px
             margin: auto
             display: flex
             align-items: center
@@ -61,3 +62,17 @@
             opacity: 0.7
             display: flex
             justify-content: flex-end                        
+.pagination
+    display: flex
+    justify-content: space-between
+    & .next,
+    & .prev
+        color: $pagination
+        border-bottom: 1px solid $pagination 
+        font-size: 24px
+    &-number
+        color: $black
+        & a,
+        & span
+            margin: 0 10px
+            font-size: 24px            
