@@ -2379,14 +2379,11 @@ a {
   font-size: 24px;
 }
 
-.pagination-number {
-  color: #000000;
-}
-
 .pagination-number a,
 .pagination-number span {
   margin: 0 10px;
   font-size: 24px;
+  color: #000000;
 }
 
 @media (max-width: 1247px) {
