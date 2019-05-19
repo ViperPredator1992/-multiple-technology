@@ -9,14 +9,14 @@
         color: $black
         margin: 0 0 35px
     &-list
-        padding: 0
         margin: 0 0 90px
-        list-style: none
         display: flex
         justify-content: center
         &__item
             margin: 0 50px
         &__link
+            display: inline-block
+            margin: 0 50px
             font-weight: bold
             font-size: 18px
             line-height: 22px
@@ -25,3 +25,35 @@
             transition: .2s
             &:hover
                 color: rgba(0,0,0, 1)
+    &-block
+        max-width: 360px
+        margin-bottom: 50px
+        &s
+            display: flex
+            align-items: center
+            flex-wrap: wrap
+            justify-content: space-between
+        &__image
+            & img
+                margin: 0 auto 30px
+                display: block
+        &__title
+            font-weight: bold
+            font-size: 24px
+            line-height: 29px 
+            color: $black
+            margin: 0 0 20px 
+            word-wrap: break-word  
+        &__text  
+            margin: 0 0 15px
+            word-wrap: break-word
+            font-size: 18px
+            color: $black
+            line-height: 22px
+        &__date
+            font-size: 18px
+            line-height: 22px
+            color: $black
+            opacity: 0.7
+            display: flex
+            justify-content: flex-end                        
