@@ -3173,6 +3173,9 @@ a {
   .cabinets-hero__title {
     font-size: 28px;
   }
+  .cabinets-hero__link {
+    margin: auto;
+  }
   .provide-services-block__image {
     height: 196px;
   }
