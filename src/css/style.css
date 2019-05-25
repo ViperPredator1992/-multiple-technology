@@ -2524,12 +2524,75 @@ a {
   color: #000000;
 }
 
+.scheme-plus-minus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .scheme-plus-minus-block__title {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   text-transform: uppercase;
   opacity: 0.4;
+  margin: 0 0 25px;
+}
+
+.scheme-plus-minus-block-list {
+  margin: 0;
+  padding: 0;
+  max-width: 550px;
+}
+
+.scheme-plus-minus-block-list__item {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.scheme-rezult-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  max-width: 365px;
+  margin-left: auto;
+}
+
+.scheme-rezult-list__item {
+  max-width: 370px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.scheme-rezult-list__item:last-child {
+  width: 333px;
+  text-align: right;
+}
+
+.scheme-rezult-list__item-time {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.item-time-left {
+  color: #000000;
+  opacity: .3;
+  margin-right: 18px;
+  text-align: right;
+}
+
+.item-time-right {
+  opacity: 1;
+  color: #000000;
+  text-align: left;
 }
 
 .plus-color {
