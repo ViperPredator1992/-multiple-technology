@@ -41,7 +41,19 @@
         & .container
             max-width: 780px
     .section-why-we
-        padding: 0            
+        padding: 0 
+@media (max-width: 1124px)
+    .electrical
+        & .container
+            flex-direction: column
+        &-left
+            &-side
+                max-width: none
+                &__subtitle
+                    margin: 0 0 10px
+        &-right
+            &-side
+                margin-top: 15px                                   
 @media (max-width: 1110px)
     .our-clients
         & .container
@@ -66,7 +78,16 @@
     .we-work
         &-block
             &::after
-                right: -70px                                                        
+                right: -70px
+    .section-electrical
+        padding: 50px 0
+    .electrical
+        &-left
+            &-side
+                &__title
+                    font-size: 32px
+                    line-height: normal
+                    margin: 0 0 25px                                                                            
 @media (max-width: 992px)
     .header
         &-bottom
@@ -268,6 +289,11 @@
                 margin-bottom: 0
             & img
                 margin: 0 auto 20px
+    .electrical
+        &-left
+            &-side
+                &__title
+                    text-align: center                
 @media (max-width: 700px) 
     .section-cabinets-hero
         padding: 50px 0  

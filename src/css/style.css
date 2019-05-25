@@ -2438,6 +2438,43 @@ a {
   color: #000000;
 }
 
+.section-electrical {
+  padding: 100px 0;
+}
+
+.electrical .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.electrical-left-side {
+  max-width: 520px;
+}
+
+.electrical-left-side__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  margin: 0 0 40px;
+  color: #000000;
+}
+
+.electrical-left-side__subtitle {
+  margin: 0 0 20px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
 @media (max-width: 1247px) {
   .partners-block-text {
     margin-left: 20px;
@@ -2501,6 +2538,24 @@ a {
   }
 }
 
+@media (max-width: 1124px) {
+  .electrical .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .electrical-left-side {
+    max-width: none;
+  }
+  .electrical-left-side__subtitle {
+    margin: 0 0 10px;
+  }
+  .electrical-right-side {
+    margin-top: 15px;
+  }
+}
+
 @media (max-width: 1110px) {
   .our-clients .container {
     max-width: 600px;
@@ -2530,6 +2585,14 @@ a {
 @media (max-width: 1000px) {
   .we-work-block::after {
     right: -70px;
+  }
+  .section-electrical {
+    padding: 50px 0;
+  }
+  .electrical-left-side__title {
+    font-size: 32px;
+    line-height: normal;
+    margin: 0 0 25px;
   }
 }
 
@@ -2821,6 +2884,9 @@ a {
   }
   .become-partner-block img {
     margin: 0 auto 20px;
+  }
+  .electrical-left-side__title {
+    text-align: center;
   }
 }
 
