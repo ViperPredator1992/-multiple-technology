@@ -62,7 +62,17 @@
             &-text
                 &__title
                     font-size: 40px
-                    margin: 5px 0 17px      
+                    margin: 5px 0 17px
+@media (max-width: 1140px)
+    .certificate
+        &__subtitle
+            margin-bottom: 40px
+        &-block
+            &__image
+                margin-bottom: 40px
+            &s
+                max-width: 900px
+                margin: auto                          
 @media (max-width: 1132px)
     .why-we
         &-block
@@ -72,6 +82,17 @@
             max-width: 780px
     .section-why-we
         padding: 0 
+    .performed
+        &-block
+            flex-direction: column
+            margin-bottom: 30px
+            &:nth-child(even)
+                & .performed-block__image
+                    order: 0
+            &__text
+                margin: 0
+            &__inner
+                max-width: none    
 @media (max-width: 1124px)
     .electrical
         & .container
@@ -190,7 +211,12 @@
     .cabinets-hero
         min-height: 550px
         &__title
-            font-size: 44px            
+            font-size: 44px
+@media (max-width: 860px)
+    .certificate
+        &-block
+            &s
+                max-width: 560px                        
 @media (max-width: 850px)
     .we-work
         &-block
@@ -350,7 +376,12 @@
     .become-partner
         &__title 
             line-height: normal
-            font-size: 36px                                                                       
+            font-size: 36px
+@media (max-width: 590px)
+    .certificate
+        &-block
+            &s
+                max-width: 300px                                                                                   
 @media (max-width: 580px)
     .section-our-clients 
         padding: 60px 0 0
@@ -376,7 +407,12 @@
                 &__item
                     margin-bottom: 0
         &-block
-            margin-bottom: 30px                                                              
+            margin-bottom: 30px
+    .performed
+        &__title
+            font-size: 36px
+            text-align: center
+            margin: 0 0 25px                                                                          
 @media (max-width: 550px)
     .section-title
         text-align: center
@@ -528,7 +564,12 @@
         &-block
             &__title
                 font-size: 26px
-                text-align: center                                                                    
+                text-align: center
+    .performed
+        &__title
+            font-size: 26px
+            line-height: normal
+            margin: 0 0 15px                                                                                    
 @media (max-width: 411px)
     .partners-slide .owl-item img,
     .partners-slide

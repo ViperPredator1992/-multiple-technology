@@ -8,9 +8,13 @@
     &-block
         margin-bottom: 60px
         display: flex
+        align-items: center
         justify-content: space-between
+        &:nth-child(even)
+            & .performed-block__image
+                order: 1
         &__inner
-            max-width: 600px 
+            max-width: 700px     
         &__title
             font-weight: bold
             font-size: 24px
@@ -20,4 +24,7 @@
         &__text
             font-size: 18px
             line-height: 22px
-            color: $black 
+            color: $black
+        &s
+            max-width: 1170px
+            margin-left: auto     
