@@ -270,9 +270,7 @@
         &-rezult
             &-list
                 &__item
-                    margin-bottom: 5px
-    .item-time-left
-        margin-right: 14px                                                                                                                                  
+                    margin-bottom: 5px                                                                                                                                 
 @media (max-width: 768px)
     .section-hero
         padding: 50px 0 36px 
@@ -372,7 +370,13 @@
                 flex-direction: column
                 align-items: center
         &-plus-minus
-            margin-bottom: 0                                       
+            margin-bottom: 0 
+        &-rezult
+            &-list
+                &__item
+                    margin-bottom: 0
+        &-block
+            margin-bottom: 30px                                                              
 @media (max-width: 550px)
     .section-title
         text-align: center
@@ -519,14 +523,29 @@
         &-left
             &-side
                 &__title
-                    font-size: 23px                                                
+                    font-size: 23px
+    .scheme
+        &-block
+            &__title
+                font-size: 26px
+                text-align: center                                                                    
 @media (max-width: 411px)
     .partners-slide .owl-item img,
     .partners-slide
         max-height: 273px
     .partners-slide .owl-nav button.owl-next,
     .partners-slide .owl-nav button.owl-prev
-        top: 135px                      
+        top: 135px
+    .scheme
+        &-rezult
+            &-list
+                &__item
+                    &-time
+                        font-size: 18px
+                        line-height: normal
+                &__item
+                    &:last-child
+                        width: 295px                                          
 @media (max-width: 408px)
     .section-articles
         padding: 40px 0
@@ -546,19 +565,36 @@
     .pagination
         margin-top: 15px                                                 
 @media (max-width: 406px)
-   .provide-services
+    .provide-services
         &-block
             &__image
                 height: 214px
             &__hidden
                 height: 214px
 @media (max-width: 400px)
-   .provide-services
+    .provide-services
         &-block
             &__image
                 height: 210px
             &__hidden
-                height: 210px 
+                height: 210px
+    .item-time-left
+        margin-right: 0
+    .scheme
+        &-rezult
+            &-list
+                &__item
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    &:last-child
+                        text-align: center
+                        width: auto
+                    &-time
+                        font-size: 22px
+        &-block
+            &__title
+                font-size: 24px                    
 @media (max-width: 390px)
     .our-clients
         &-images

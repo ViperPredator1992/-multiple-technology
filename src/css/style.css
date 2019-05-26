@@ -2608,6 +2608,42 @@ a {
   color: #FE6767;
 }
 
+.performed__title {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 58px;
+  color: #000000;
+  margin: 0 0 70px;
+}
+
+.performed-block {
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.performed-block__inner {
+  max-width: 600px;
+}
+
+.performed-block__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.performed-block__text {
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+
 @media (max-width: 1247px) {
   .partners-block-text {
     margin-left: 20px;
@@ -2980,9 +3016,6 @@ a {
   .scheme-rezult-list__item {
     margin-bottom: 5px;
   }
-  .item-time-left {
-    margin-right: 14px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -3133,6 +3166,12 @@ a {
   }
   .scheme-plus-minus {
     margin-bottom: 0;
+  }
+  .scheme-rezult-list__item {
+    margin-bottom: 0;
+  }
+  .scheme-block {
+    margin-bottom: 30px;
   }
 }
 
@@ -3323,6 +3362,10 @@ a {
   .electrical-left-side__title {
     font-size: 23px;
   }
+  .scheme-block__title {
+    font-size: 26px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 411px) {
@@ -3333,6 +3376,13 @@ a {
   .partners-slide .owl-nav button.owl-next,
   .partners-slide .owl-nav button.owl-prev {
     top: 135px;
+  }
+  .scheme-rezult-list__item-time {
+    font-size: 18px;
+    line-height: normal;
+  }
+  .scheme-rezult-list__item:last-child {
+    width: 295px;
   }
 }
 
@@ -3375,6 +3425,31 @@ a {
   }
   .provide-services-block__hidden {
     height: 210px;
+  }
+  .item-time-left {
+    margin-right: 0;
+  }
+  .scheme-rezult-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .scheme-rezult-list__item:last-child {
+    text-align: center;
+    width: auto;
+  }
+  .scheme-rezult-list__item-time {
+    font-size: 22px;
+  }
+  .scheme-block__title {
+    font-size: 24px;
   }
 }
 
