@@ -3226,7 +3226,7 @@ a {
 
 @media (max-width: 590px) {
   .certificate-blocks {
-    max-width: 300px;
+    max-width: 270px;
   }
 }
 
@@ -3467,6 +3467,11 @@ a {
   .performed__title {
     font-size: 26px;
     line-height: normal;
+    margin: 0 0 15px;
+  }
+  .certificate__title {
+    font-size: 36px;
+    text-align: center;
     margin: 0 0 15px;
   }
 }
