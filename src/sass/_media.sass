@@ -3,6 +3,25 @@
         &-block
             &-text
                 margin-left: 20px
+@media (max-width: 1200px)
+    .section
+        &-scheme
+            font-size: 38px
+    .scheme
+        &-block
+            margin-bottom: 50px
+            &__title
+                margin: 0 0 20px
+        &-wrap
+            margin-bottom: 30px
+            flex-direction: column
+            &__image
+                margin: auto
+                &-subtitle
+                    margin: 10px 0 15px
+            &__text
+                max-width: none
+                text-indent: 12px                                    
 @media (max-width: 1197px)
     .partners
         &-block
@@ -19,7 +38,18 @@
         &-list
             margin-bottom: 50px 
             &__link
-                margin: 0 20px   
+                margin: 0 20px
+@media (max-width: 1180px)
+    .scheme
+        &-plus
+            &-minus
+                margin-bottom: 20px
+                &-block
+                    margin-bottom: 15px
+                    &__title
+                        margin: 0 0 5px
+        &-wrap
+            margin-bottom: 20px                                   
 @media (max-width: 1170px)
     .provide-services
         & .container
@@ -231,7 +261,18 @@
             &__input
                 display: block
             &__button
-                margin: auto                                                                                       
+                margin: auto 
+    .scheme
+        &-block
+            &__title
+                line-height: normal
+                font-size: 30px
+        &-rezult
+            &-list
+                &__item
+                    margin-bottom: 5px
+    .item-time-left
+        margin-right: 14px                                                                                                                                  
 @media (max-width: 768px)
     .section-hero
         padding: 50px 0 36px 
@@ -323,7 +364,15 @@
     .poll
         &-block
             &s
-                max-width: 360px       
+                max-width: 360px
+    .scheme
+        &-wrap
+            margin-bottom: 5px
+            &__image
+                flex-direction: column
+                align-items: center
+        &-plus-minus
+            margin-bottom: 0                                       
 @media (max-width: 550px)
     .section-title
         text-align: center
