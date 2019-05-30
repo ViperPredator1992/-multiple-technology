@@ -430,6 +430,23 @@ a {
   height: 60px;
   border: none;
   display: block;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.button:hover {
+  background-color: #048821;
+}
+
+.articles-us-top__link {
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.articles-us-top__link:hover {
+  background-color: #048821;
 }
 
 .menu span {
@@ -1260,7 +1277,7 @@ a {
 }
 
 .have-question-right__title {
-  margin: 39px 0 48px;
+  margin: 40px 0 50px;
   text-align: center;
   color: #ffffff;
 }
@@ -1269,7 +1286,7 @@ a {
   padding: 0;
   list-style: none;
   max-width: 430px;
-  margin: 0 auto 97px;
+  margin: 0 auto 70px;
 }
 
 .have-question-right__item {
@@ -1332,6 +1349,13 @@ a {
   font-size: 24px;
   line-height: 29px;
   border-radius: 5px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+.have-question-right__button:hover {
+  background-color: #048821;
 }
 
 .section-our-clients {
