@@ -30,7 +30,11 @@
             &-text
                 max-width: none
                 margin: 30px 0
-                padding-right: 0 
+                padding-right: 0
+                &__image
+                    margin: 15px auto 0 
+            &-wrap
+                flex-direction: column-reverse             
 @media (max-width: 1185px)
     .articles
         & .container
@@ -574,7 +578,9 @@
         &__title
             font-size: 36px
             text-align: center
-            margin: 0 0 15px                                                                                            
+            margin: 0 0 15px
+    .partners-block-text__image
+        margin: 0 auto 0                                                                                                    
 @media (max-width: 411px)
     .partners-slide .owl-item img,
     .partners-slide
@@ -652,7 +658,10 @@
     .our-clients
         &-images
             &__image
-                width: 47%                                
+                width: 47%
+    .our-services-block
+        &__link
+            letter-spacing: .5rem                                          
 @media (max-width: 390px)
     .have-question
         &-right
