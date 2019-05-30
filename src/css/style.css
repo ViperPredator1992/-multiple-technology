@@ -1919,8 +1919,23 @@ a {
   border: none;
   padding: 0 20px;
   color: #000000;
-  opacity: 0.5;
   font-size: 18px;
+}
+
+.become-partner-block__input::-webkit-input-placeholder {
+  color: #000000;
+}
+
+.become-partner-block__input:-ms-input-placeholder {
+  color: #000000;
+}
+
+.become-partner-block__input::-ms-input-placeholder {
+  color: #000000;
+}
+
+.become-partner-block__input::placeholder {
+  color: #000000;
 }
 
 .become-partner-block__textarea {
@@ -1931,7 +1946,6 @@ a {
   border: none;
   width: 100%;
   color: #000000;
-  opacity: 0.5;
   font-size: 18px;
   line-height: 22px;
   padding: 20px;
