@@ -615,7 +615,6 @@ a {
   height: 173px;
   width: 100%;
   border: none;
-  overflow-y: scroll;
   word-wrap: break-word;
 }
 
@@ -693,7 +692,7 @@ a {
 }
 
 .application-form__button:hover {
-  bottom: 3%;
+  bottom: 4%;
   background-color: #027B1D;
   -webkit-box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.4);
