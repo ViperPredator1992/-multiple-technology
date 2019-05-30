@@ -2320,7 +2320,7 @@ a {
 }
 
 .articles-list {
-  margin: 0 0 90px;
+  margin: 0 0 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2345,10 +2345,16 @@ a {
   -o-transition: .2s;
   transition: .2s;
   background-color: #ffffff;
+  border-bottom: 1px solid transparent;
 }
 
 .articles-list__link:hover {
   color: black;
+}
+
+.articles-list__link.active {
+  color: #000000;
+  border-bottom: 1px solid #000000;
 }
 
 .articles-block {
@@ -3522,6 +3528,10 @@ a {
   }
   .partners-block-text__image {
     margin: 0 auto 0;
+  }
+  .articles-list__link {
+    padding: 10px 20px;
+    margin: 0 0 10px;
   }
 }
 

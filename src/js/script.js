@@ -13,6 +13,11 @@ $(document).ready(function () {
         $(this).addClass('current');
     });
 
+    $('.articles-list__link').click(function () {
+        $('.articles-list__link').removeClass('active');
+        $(this).addClass('active');
+    });
+
     //if (screen.width < 992) {
         $(".menu").click(function () {
             if ($(this).find("ul").css("display") == "none") {
