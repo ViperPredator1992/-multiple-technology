@@ -1903,6 +1903,22 @@ a {
   margin-bottom: 40px;
 }
 
+.become-partner-block:nth-child(3) .become-partner-block__input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.become-partner-block:nth-child(3) .become-partner-block__input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.become-partner-block:nth-child(3) .become-partner-block__input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.become-partner-block:nth-child(3) .become-partner-block__input:focus::placeholder {
+  color: transparent;
+}
+
 .become-partner-block__title {
   font-weight: bold;
   font-size: 18px;
