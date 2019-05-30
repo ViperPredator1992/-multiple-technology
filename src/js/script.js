@@ -13,7 +13,7 @@ $(document).ready(function () {
         $(this).addClass('current');
     });
 
-    if (screen.width < 992) {
+    //if (screen.width < 992) {
         $(".menu").click(function () {
             if ($(this).find("ul").css("display") == "none") {
                 $(this).find("ul").slideDown();
@@ -24,7 +24,7 @@ $(document).ready(function () {
                 $(this).find("ul").slideUp();
             }
         });
-    }
+    //}
     
     $('.submit-application').click(function () {
         var el = $(this).attr('href');

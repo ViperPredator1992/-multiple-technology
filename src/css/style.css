@@ -1501,7 +1501,7 @@ a {
 .poll-block__link {
   border-radius: 10px;
   display: block;
-  padding: 22px 0;
+  padding: 22px 5px;
   -webkit-transition: 0.2s;
   -o-transition: 0.2s;
   transition: 0.2s;
@@ -3456,7 +3456,7 @@ a {
     max-width: 310px;
   }
   .hero-text__title {
-    font-size: 22px;
+    font-size: 32px;
     line-height: normal;
   }
   .partners-blocks {
@@ -3515,6 +3515,18 @@ a {
   }
   .scheme-rezult-list__item:last-child {
     width: 295px;
+  }
+  .header-top .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header-top__address {
+    display: none;
+  }
+  .header-top__schedule {
+    text-align: center;
   }
 }
 
@@ -3583,18 +3595,12 @@ a {
   .scheme-block__title {
     font-size: 24px;
   }
+  .our-clients-images__image {
+    width: 47%;
+  }
 }
 
 @media (max-width: 390px) {
-  .our-clients-images {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
   .have-question-right__input {
     height: 50px;
   }
