@@ -1448,6 +1448,7 @@ a {
   border: none;
   height: 45px;
   padding: 0 20px 0 60px;
+  color: #ffffff;
 }
 
 .request-form__input::-webkit-input-placeholder {
@@ -2293,8 +2294,8 @@ a {
   padding: 60px 0 80px;
 }
 
-.articles .conatiner {
-  max-width: 1150px;
+.articles .container {
+  max-width: 1170px;
 }
 
 .articles__title {
