@@ -13,18 +13,22 @@ $(document).ready(function () {
         $(this).addClass('current');
     });
 
-    if (screen.width < 992) {
-        $(".menu").click(function () {
-            if ($(this).find("ul").css("display") == "none") {
-                $(this).find("ul").slideDown();
-                $(".burger").addClass("burger-open");
-            }
-            else {
-                $(".burger").removeClass("burger-open");
-                $(this).find("ul").slideUp();
-            }
-        });
-    }
+    $('.articles-list__link').click(function () {
+        $('.articles-list__link').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    
+    $(".menu").click(function () {
+        if ($(this).find("ul").css("display") == "none") {
+            $(this).find("ul").slideDown();
+            $(".burger").addClass("burger-open");
+        }
+        else {
+            $(".burger").removeClass("burger-open");
+            $(this).find("ul").slideUp();
+        }
+    });
     
     $('.submit-application').click(function () {
         var el = $(this).attr('href');

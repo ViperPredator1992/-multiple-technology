@@ -18,18 +18,17 @@ $(document).ready(function () {
         $(this).addClass('active');
     });
 
-    //if (screen.width < 992) {
-        $(".menu").click(function () {
-            if ($(this).find("ul").css("display") == "none") {
-                $(this).find("ul").slideDown();
-                $(".burger").addClass("burger-open");
-            }
-            else {
-                $(".burger").removeClass("burger-open");
-                $(this).find("ul").slideUp();
-            }
-        });
-    //}
+    
+    $(".menu").click(function () {
+        if ($(this).find("ul").css("display") == "none") {
+            $(this).find("ul").slideDown();
+            $(".burger").addClass("burger-open");
+        }
+        else {
+            $(".burger").removeClass("burger-open");
+            $(this).find("ul").slideUp();
+        }
+    });
     
     $('.submit-application').click(function () {
         var el = $(this).attr('href');
