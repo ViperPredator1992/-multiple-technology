@@ -2788,6 +2788,81 @@ a {
           justify-content: space-between;
 }
 
+.section-footer {
+  padding: 33px 0 46px;
+}
+
+.footer {
+  background-color: #3F3F55;
+}
+
+.footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-top__logo {
+  display: block;
+}
+
+.footer-top__block {
+  position: relative;
+}
+
+.footer-top__block::before {
+  content: '';
+  background: url(../img/phone.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: -65px;
+}
+
+.footer-top__block:nth-child(3)::before {
+  content: '';
+  background: url(../img/email.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: -65px;
+}
+
+.footer-top__block:nth-child(4)::before {
+  content: '';
+  background: url(../img/clock.png) no-repeat;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  left: -65px;
+}
+
+.footer-top__text {
+  margin: 0 0 6px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.5;
+  line-height: 17px;
+}
+
+.footer-top__phone, .footer-top__email, .footer-top__clock {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
 @media (max-width: 1247px) {
   .partners-block-text {
     margin-left: 20px;

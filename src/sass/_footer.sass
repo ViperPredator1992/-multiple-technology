@@ -1,0 +1,52 @@
+.section-footer
+    padding: 33px 0 46px
+.footer
+    background-color: $footer
+    &-top
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        &__logo
+            display: block
+        &__block
+            position: relative 
+            &::before
+                content: ''
+                background: url(../img/phone.png) no-repeat
+                width: 40px
+                height: 40px
+                position: absolute
+                top: 0
+                left: -65px
+        &__block:nth-child(3)
+            &::before
+                content: ''
+                background: url(../img/email.png) no-repeat
+                width: 40px
+                height: 40px
+                position: absolute
+                top: 0
+                left: -65px
+        &__block:nth-child(4)
+            &::before
+                content: ''
+                background: url(../img/clock.png) no-repeat
+                width: 40px
+                height: 40px
+                position: absolute
+                top: 0
+                left: -65px                   
+        &__text
+            margin: 0 0 6px
+            font-size: 14px
+            color: $white
+            opacity: 0.5
+            line-height: 17px
+        &__phone,
+        &__email,
+        &__clock
+            font-weight: bold
+            font-size: 14px
+            line-height: 17px
+            color: $white     
