@@ -202,7 +202,13 @@
         &-top
             flex-direction: column
             &__logo
-                margin-bottom: 20px                                       
+                margin-bottom: 20px
+            &__block
+                text-align: center
+                margin-bottom: 20px
+                &:nth-child(3)
+                    &::before
+                        left: -58px                                           
 @media (max-width: 900px)
     .our-services
         &-block
@@ -620,7 +626,11 @@
             &__address
                 display: none
             &__schedule
-                text-align: center                                                                                     
+                text-align: center 
+    .footer-top__block::before,
+    .footer-top__block:nth-child(3)::before,
+    .footer-top__block:nth-child(4)::before
+        display: none                                                                                                
 @media (max-width: 408px)
     .section-articles
         padding: 40px 0

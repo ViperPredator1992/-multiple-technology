@@ -1078,7 +1078,6 @@ a {
 .provide-services-block__image img {
   display: block;
   margin: auto;
-  max-width: 362px;
 }
 
 .provide-services-block .mask {
@@ -3194,6 +3193,13 @@ a {
   .footer-top__logo {
     margin-bottom: 20px;
   }
+  .footer-top__block {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .footer-top__block:nth-child(3)::before {
+    left: -58px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -3756,6 +3762,11 @@ a {
   }
   .header-top__schedule {
     text-align: center;
+  }
+  .footer-top__block::before,
+  .footer-top__block:nth-child(3)::before,
+  .footer-top__block:nth-child(4)::before {
+    display: none;
   }
 }
 
