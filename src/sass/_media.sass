@@ -76,7 +76,13 @@
                 margin-bottom: 40px
             &s
                 max-width: 900px
-                margin: auto                          
+                margin: auto 
+    .footer
+        &-bottom
+            flex-direction: column
+            align-items: center
+            &__text
+                margin: 0 0 20px                                     
 @media (max-width: 1132px)
     .why-we
         &-block
@@ -190,7 +196,13 @@
                 align-items: center
                 text-align: center
     .section-contact
-        padding: 40px 0 50px                               
+        padding: 40px 0 50px
+@media (max-width: 950px)
+    .footer
+        &-top
+            flex-direction: column
+            &__logo
+                margin-bottom: 20px                                       
 @media (max-width: 900px)
     .our-services
         &-block
